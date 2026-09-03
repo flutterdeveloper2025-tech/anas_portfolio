@@ -12,10 +12,30 @@ export default function Contact(){
   const [sent,setSent]=useState(false);
   const [loading,setLoading]=useState(false);
   const ch=e=>setForm(p=>({...p,[e.target.name]:e.target.value}));
-  const sub=()=>{
+  const [error,setError]=useState("");
+  const sub=async()=>{
     if(!form.name||!form.email||!form.message)return;
+    setError("");
     setLoading(true);
-    setTimeout(()=>{setLoading(false);setSent(true);setForm({name:"",email:"",message:""});},1200);
+    try{
+      const res=await fetch("https://formsubmit.co/ajax/manasraza18@gmail.com",{
+        method:"POST",
+        headers:{"Content-Type":"application/json",Accept:"application/json"},
+        body:JSON.stringify({
+          name:form.name,
+          email:form.email,
+          message:form.message,
+          _subject:`Portfolio message from ${form.name}`,
+        }),
+      });
+      if(!res.ok)throw new Error("Failed");
+      setSent(true);
+      setForm({name:"",email:"",message:""});
+    }catch(err){
+      setError("Couldn't send right now — please email me directly instead.");
+    }finally{
+      setLoading(false);
+    }
   };
   return(
     <section id="contact" className="py-24 relative">
@@ -84,6 +104,7 @@ export default function Contact(){
                   style={{opacity:loading?0.7:1}}>
                   {loading?"Sending…":<><Send size={16}/>Send Message</>}
                 </motion.button>
+                {error&&<p className="text-xs text-center" style={{color:"#f87171"}}>{error}</p>}
               </div>
             )}
           </motion.div>
