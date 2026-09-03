@@ -168,7 +168,7 @@ export default function Hero(){
               </div>
 
               {/* Floating status dot */}
-              <div className="absolute bottom-3 right-3 w-5 h-8 rounded-full border-2 border-dark-900"
+              <div className="absolute bottom-3 right-3 w-5 h-5 rounded-full border-2 border-dark-900"
                 style={{background:"#34d399",boxShadow:"0 0 12px rgba(52,211,153,0.6)"}}/>
             </div>
 
