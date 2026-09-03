@@ -8,7 +8,7 @@ export const PERSON = {
   phone:    "(+92) 3209241276",
   location: "Karachi, Pakistan",
   linkedin: "https://www.linkedin.com/in/muhammad-anas-raza-882327259/",
-  about:    "IT and Network Professional with 3+ years of hands-on experience in system administration, enterprise networking, and cloud environments. Skilled in Windows Server, Active Directory, DNS/DHCP, VMware ESXi, and LAN/WAN infrastructure. Experienced with Azure, PowerShell scripting, CI/CD pipelines, Docker, and Kubernetes. Focused on security, availability, and performance across dev, QA, and production environments.",
+  about:    "IT and Network Professional with 4+ years of hands-on experience in system administration, enterprise networking, and cloud environments. Skilled in Windows Server, Active Directory, DNS/DHCP, VMware ESXi, and LAN/WAN infrastructure. Experienced with Azure, PowerShell scripting, CI/CD pipelines, Docker, and Kubernetes. Focused on security, availability, and performance across dev, QA, and production environments.",
   stats:    [{v:"3+",l:"Years Exp."},{v:"3",l:"Companies"},{v:"6",l:"Projects"},{v:"3",l:"Certifications"}],
 };
 
