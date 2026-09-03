@@ -173,7 +173,7 @@ export default function Hero(){
             </div>
 
             {/* Floating tech cards */}
-            {[{label:"VMware ESXi", icon:"🖥️", pos:"top-4 -left-8",  delay:0},
+            {[{label:"VMware ESXi", icon:"🖥️", pos:"top-6 -left-8",  delay:0},
               {label:"Azure Cloud", icon:"☁️", pos:"top-16 -right-6", delay:0.3},
               {label:"Windows AD",  icon:"🗂️", pos:"bottom-16 -left-10",delay:0.6},
               {label:"Docker/K8s",  icon:"🐳", pos:"bottom-8 -right-4", delay:0.9}].map((b,i)=>(
