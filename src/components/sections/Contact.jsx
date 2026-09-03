@@ -55,7 +55,7 @@ export default function Contact(){
             <div className="p-6 rounded-2xl mb-6" style={{background:"rgba(139,92,246,0.05)",border:"1px solid rgba(139,92,246,0.15)"}}>
               <h3 className="font-black text-white text-lg mb-2">Let's Work Together</h3>
               <p className="text-sm leading-relaxed" style={{color:"rgba(148,163,184,0.65)"}}>
-                Looking for a skilled System & Network Administrator? I bring 3+ years of hands-on experience in enterprise infrastructure, cloud, virtualization, and DevOps support.
+                Looking for a skilled System & Network Administrator? I bring 4+ years of hands-on experience in enterprise infrastructure, cloud, virtualization, and DevOps support.
               </p>
             </div>
 
