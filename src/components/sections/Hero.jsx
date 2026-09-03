@@ -168,12 +168,12 @@ export default function Hero(){
               </div>
 
               {/* Floating status dot */}
-              <div className="absolute bottom-3 right-3 w-5 h-5 rounded-full border-2 border-dark-900"
+              <div className="absolute bottom-3 right-3 w-5 h-8 rounded-full border-2 border-dark-900"
                 style={{background:"#34d399",boxShadow:"0 0 12px rgba(52,211,153,0.6)"}}/>
             </div>
 
             {/* Floating tech cards */}
-            {[{label:"VMware ESXi", icon:"🖥️", pos:"top-6 -left-8",  delay:0},
+            {[{label:"VMware ESXi", icon:"🖥️", pos:"top-4 -left-8",  delay:0},
               {label:"Azure Cloud", icon:"☁️", pos:"top-16 -right-6", delay:0.3},
               {label:"Windows AD",  icon:"🗂️", pos:"bottom-16 -left-10",delay:0.6},
               {label:"Docker/K8s",  icon:"🐳", pos:"bottom-8 -right-4", delay:0.9}].map((b,i)=>(
