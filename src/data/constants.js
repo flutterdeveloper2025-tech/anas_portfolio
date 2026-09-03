@@ -86,12 +86,141 @@ export const EXPERIENCES = [
 ];
 
 export const PROJECTS = [
-  {title:"Cloud Deployment & High Availability",  desc:"Azure VMs, virtual networks, NSG rules, DNS, load balancer for HA & failover. Secure & scalable cloud infrastructure.",       tech:["Azure","VMs","VNet","NSG","Load Balancer"],  emoji:"☁️", color:"#7c3aed"},
-  {title:"CI/CD Pipeline & Containerized Deploy", desc:"Jenkins pipelines, Docker images on DockerHub, Kubernetes clusters, GitOps via ArgoCD with integrated security checks.",       tech:["Jenkins","Docker","Kubernetes","ArgoCD"],    emoji:"🚀", color:"#06b6d4"},
-  {title:"Virtualization & Two-Tier Architecture",desc:"VMware ESXi setup, Windows & Linux VMs, two-tier web+database architecture with secure inter-server communication.",            tech:["VMware ESXi","Windows Server","Linux"],      emoji:"🖥️", color:"#10b981"},
-  {title:"Linux Server & Web Hosting",            desc:"Static & dynamic websites on Linux, Nginx virtual hosts, MySQL integration, performance & availability tuning.",                tech:["Linux","Nginx","MySQL"],                     emoji:"🐧", color:"#f59e0b"},
-  {title:"Windows Server & App Hosting",          desc:"Windows Server config, PHP & ASP.NET apps on IIS, user access management, performance monitoring & uptime assurance.",         tech:["Windows Server","IIS","ASP.NET","PHP"],      emoji:"🪟", color:"#ec4899"},
-  {title:"Enterprise Network Infrastructure",     desc:"Full LAN/WAN config, VLANs, routing/switching, DNS, DHCP, VPN & firewall for enterprise environments with security hardening.", tech:["LAN/WAN","VLANs","DNS","DHCP","VPN"],       emoji:"🌐", color:"#8b5cf6"},
+  {
+  title: "On-Premises Virtualized Infrastructure & CRM Deployment",
+  desc: "Designed and deployed an on-premises virtualized infrastructure using VMware ESXi with dedicated Windows Server and Linux virtual machines. Configured SQL Server 2022 and SSMS for database management, IIS for ASP.NET MVC and PHP application hosting, and MySQL 8.0 with MySQL Workbench. Deployed and configured a CRM application with complete networking, firewall rules, inter-server communication, and secure access between application and database servers.",
+  tech: [
+    "VMware ESXi",
+    "Windows Server",
+    "Linux",
+    "IIS",
+    "ASP.NET MVC",
+    "PHP",
+    "SQL Server 2022",
+    "SSMS",
+    "MySQL 8.0",
+    "MySQL Workbench",
+    "CRM",
+    "Networking",
+    "Firewall"
+  ],
+  emoji: "🖥️",
+  color: "#10b981"
+},
+
+{
+  title: "Enterprise Linux Web, Database & Mail Server Infrastructure",
+  desc: "Built a complete Linux-based server environment hosting PHP applications, MySQL databases, and ASP.NET Core MVC applications. Configured Nginx with PHP-FPM, FastCGI and reverse proxy architecture, deployed ASP.NET Core applications using Kestrel and systemd, and implemented enterprise mail infrastructure using iRedMail with Postfix, Dovecot, MariaDB, OpenSSL, Roundcube and iRedAdmin. Secured services with SSL/HTTPS and production-ready server configurations.",
+  tech: [
+    "Linux",
+    "Ubuntu Server",
+    "Nginx",
+    "PHP",
+    "PHP-FPM",
+    "MySQL",
+    "ASP.NET Core MVC",
+    "Kestrel",
+    "systemd",
+    "FastCGI",
+    "Reverse Proxy",
+    "iRedMail",
+    "Postfix",
+    "Dovecot",
+    "MariaDB",
+    "OpenSSL",
+    "Roundcube",
+    "iRedAdmin",
+    "SSL/HTTPS"
+  ],
+  emoji: "🐧",
+  color: "#f59e0b"
+},
+
+{
+  title: "Microsoft Azure Cloud Infrastructure, Networking & High Availability",
+  desc: "Designed and deployed Microsoft Azure infrastructure using Azure Virtual Machines, Windows Server 2019, Virtual Networks, subnets and Network Security Groups. Configured Azure DNS and Windows DNS, hosted ASP.NET Core applications on IIS with SSL/HTTPS using Let's Encrypt, and implemented Azure Load Balancer with health probes for high availability and failover. Integrated Active Directory Domain Services with GPO and configured the AD.anas.local domain for centralized identity and server management.",
+  tech: [
+    "Microsoft Azure",
+    "Azure VM",
+    "Windows Server 2019",
+    "Azure VNet",
+    "Subnets",
+    "NSG",
+    "Azure DNS",
+    "Windows DNS",
+    "IIS",
+    "ASP.NET Core",
+    "SSL/HTTPS",
+    "Let's Encrypt",
+    "Active Directory",
+    "AD DS",
+    "GPO",
+    "Azure Load Balancer",
+    "Health Probes",
+    "High Availability",
+    "RDP"
+  ],
+  emoji: "☁️",
+  color: "#7c3aed"
+},
+
+{
+  title: "End-to-End DevOps CI/CD Pipeline on Azure — DEV → PROD",
+  desc: "Implemented a complete automated DevOps CI/CD pipeline using Jenkins and GitHub for application delivery from development to production. Created Jenkinsfile-based pipelines covering source checkout, application build, Docker image creation, Docker Hub push, DEV deployment, approval gate, smoke testing and production deployment. Implemented image-based rollback, backup procedures, GitHub webhooks, automated notifications and controlled sudo permissions. Followed a Build Once → Deploy Anywhere approach for consistent and reliable deployments.",
+  tech: [
+    "Microsoft Azure",
+    "Linux",
+    "Jenkins",
+    "GitHub",
+    "Jenkinsfile",
+    "Docker",
+    "Docker Hub",
+    "Nginx",
+    "CI/CD",
+    "DevOps",
+    "DEV Environment",
+    "PROD Environment",
+    "Smoke Testing",
+    "Backup",
+    "Rollback",
+    "GitHub Webhooks",
+    "Automation"
+  ],
+  emoji: "🚀",
+  color: "#06b6d4"
+},
+
+{
+  title: "Enterprise Kubernetes DevSecOps & GitOps Platform on Azure",
+  desc: "Built an enterprise Kubernetes DevSecOps and GitOps platform on Microsoft Azure using AKS. Integrated Jenkins and GitHub for CI/CD automation with SonarQube quality gates and Trivy HIGH/CRITICAL vulnerability scanning before container deployment. Built and pushed Docker images to Docker Hub, deployed workloads to separate Dev and Prod namespaces, and implemented ArgoCD for GitOps-based continuous delivery. Added Prometheus, Grafana and Alertmanager for monitoring, dashboards and production alerting, with smoke testing and Kubernetes LoadBalancer-based application exposure.",
+  tech: [
+    "Microsoft Azure",
+    "AKS",
+    "Kubernetes",
+    "Jenkins",
+    "GitHub",
+    "Docker",
+    "Docker Hub",
+    "SonarQube",
+    "Trivy",
+    "ArgoCD",
+    "GitOps",
+    "Prometheus",
+    "Grafana",
+    "Alertmanager",
+    "CI/CD",
+    "DevSecOps",
+    "Namespaces",
+    "Deployments",
+    "ReplicaSets",
+    "Pods",
+    "LoadBalancer",
+    "Observability",
+    "Security Scanning"
+  ],
+  emoji: "☸️",
+  color: "#8b5cf6"
+},
 ];
 
 export const EDUCATION = [
