@@ -163,7 +163,7 @@ export default function Hero(){
               {/* Outer ring */}
               <div className="w-52 h-52 rounded-full p-1" style={{background:G.purple,boxShadow:"0 0 0 4px rgba(124,58,237,0.2),0 0 60px rgba(124,58,237,0.4)"}}>
                 <div className="w-full h-full rounded-full overflow-hidden bg-dark-800">
-                  <img src="/profile.svg" alt="Muhammad Anas Raza" className="w-full h-full object-cover"/>
+                  <img src="/profile.jfi" alt="Muhammad Anas Raza" className="w-full h-full object-cover"/>
                 </div>
               </div>
 
